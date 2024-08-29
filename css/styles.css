@@ -1,65 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap");
-body {
-  padding: 30px;
-}
-
-.cv-holder {
+.cv-template {
   margin: auto;
   display: flex;
   width: 922px;
   aspect-ratio: 2480/3508;
-  background-color: red;
+  background-color: gray;
   transform-origin: top left;
 }
-.cv-holder .box {
+.cv-template .box {
   aspect-ratio: 1/1;
   background-color: rgb(53, 46, 148);
   border-radius: 7px;
-}
-@media (max-width: 992px) {
-  .cv-holder {
-    scale: 0.89;
-  }
-}
-@media (max-width: 892px) {
-  .cv-holder {
-    scale: 0.78;
-  }
-}
-@media (max-width: 792px) {
-  .cv-holder {
-    scale: 0.67;
-  }
-}
-@media (max-width: 692px) {
-  .cv-holder {
-    scale: 0.56;
-  }
-}
-@media (max-width: 592px) {
-  .cv-holder {
-    scale: 0.45;
-  }
-}
-@media (max-width: 492px) {
-  .cv-holder {
-    scale: 0.34;
-  }
-}
-@media (max-width: 392px) {
-  .cv-holder {
-    scale: 0.23;
-  }
-}
-@media (max-width: 292px) {
-  .cv-holder {
-    scale: 0.12;
-  }
-}
-@media (max-width: 192px) {
-  .cv-holder {
-    scale: 0.01;
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */
