@@ -1,0 +1,28 @@
+@import "variables";
+@import "mixins";
+@import "utilty";
+
+@import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap");
+
+body {
+  padding: 30px;
+}
+.cv-holder {
+  margin: auto;
+  display: flex;
+  width: 922px;
+  aspect-ratio: 2480 / 3508;
+  background-color: red;
+  transform-origin: top left;
+  .box {
+    aspect-ratio: 1/1;
+    background-color: rgb(53, 46, 148);
+    border-radius: 7px;
+  }
+
+  @for $i from 1 through 9 {
+    @media (max-width: #{ 1092px - ($i * 100 )}) {
+      scale: (#{1 - ($i * 0.11)});
+    }
+  }
+}
