@@ -12,9 +12,9 @@ const cvTemplate = document.querySelector(".cv-template");
 let newScreenSize;
 
 document.addEventListener("DOMContentLoaded", function () {
-  console.log("hello");
   resetCvSize();
   window.addEventListener("resize", resetCvSize);
+  window.addEventListener("load", resetCvSize);
 });
 
 function resetCvSize() {
@@ -29,12 +29,12 @@ function resetCvSize() {
   if (screenWidth < templateWidth) {
     // always remeber last size when user try to small the screen
     newScreenSize = screenWidth;
-    const cvTemplateWidth = cvTemplate.getBoundingClientRect().width;
+    const cvHolderWidth = cvHolder.getBoundingClientRect().width;
 
-    console.log(cvTemplateWidth);
+    console.log(cvHolderWidth);
 
     // 992 is the custom width that i give to temp at css
-    const scaleRatio = cvTemplateWidth / 992;
+    const scaleRatio = cvHolderWidth / 992;
     cvTemplate.style.scale = scaleRatio;
   }
   // if user try to resize bigger agian
